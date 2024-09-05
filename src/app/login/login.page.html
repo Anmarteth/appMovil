@@ -6,7 +6,19 @@
       </div>
       <div class="contenedorFormulario">
         <div class="formulario">
-          
+          <ion-item>
+            <ion-input name="username" [(ngModel)]=username class="textLogin" type="text" placeholder="Username">
+
+            </ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input name="password" [(ngModel)]=password class="textLogin" type="password" placeholder="password">
+
+            </ion-input>
+          </ion-item>
+          <ion-button (click)="ingresar()" class="botonAceptar" expand="block" fill="clear" shape="round">
+            Ingresar
+          </ion-button>
         </div>
       </div>
     </div>
