@@ -1,21 +1,22 @@
 <ion-app>
   <ion-content>
     <div id="login">
-      <div class="logo">
-      
+      <div class="contenedorLogo">
+        <div class="logo">
+        </div>
       </div>
       <div class="contenedorFormulario">
         <div class="formulario">
-          <ion-item>
-            <ion-input name="username" [(ngModel)]=username class="textLogin" type="text" placeholder="Username">
+          <div>
+            <ion-input name="username" [(ngModel)]=username class="textLogin" type="text" placeholder="Nombre de usuario">
 
             </ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input name="password" [(ngModel)]=password class="textLogin" type="password" placeholder="password">
+          </div>
+          <div>
+            <ion-input name="password" [(ngModel)]=password class="textLogin" type="password" placeholder="Contraseña">
 
             </ion-input>
-          </ion-item>
+          </div>
           <ion-button (click)="ingresar()" class="botonAceptar" expand="block" fill="clear" shape="round">
             Ingresar
           </ion-button>
